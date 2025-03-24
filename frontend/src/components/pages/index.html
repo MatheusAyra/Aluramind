@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Relatório de Feedbacks</title>
+</head>
+<body>
+    <h1>Relatório de Feedbacks</h1>
+    <p><strong>Feedbacks Positivos:</strong> {{ positive_percentage }}%</p>
+    
+    <h2>Funcionalidades Mais Pedidas</h2>
+    <ul>
+        {% for feature in top_features %}
+        <li>{{ feature.feature }}: {{ feature.count }} pedidos</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
